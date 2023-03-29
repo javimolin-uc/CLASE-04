@@ -25,9 +25,9 @@
                 var title = select("header");
                 createElement("h1", "Aceptaste dibujar a " + palabra_pasada).parent(title);
                 var descarga = select("#descargar");
-                descarga.mousePressed(EstaNoEs);
+                descarga.mousePressed(artemania);
                 var borra = select("#borrar");
-                borra.mousePressed(EstaNoEs);
+                borra.mousePressed(borrador);
                 elColor = createColorPicker("#000000").parent("controles");
                 elSlider = createSlider(1, 5, 3).parent("controles");
                 createCanvas(windowWidth, windowHeight).position(0, 0).style("z-index", -1);
