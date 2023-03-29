@@ -31,7 +31,7 @@ function draw() {
 }
 
 function artemania() {
-    saveCanvas("mi_ave", "jpg");
+    saveCanvas("mi_digi", "jpg");
 }
 
 function borrador() {
