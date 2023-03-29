@@ -25,6 +25,7 @@
             var x;
             var lasHoras = momentoActual.getHours();
             var losMinutos = momentoActual.getMinutes();
+            var losDigimon
 
 
             function preload() {
@@ -34,13 +35,13 @@
                 datosArreglados = Object.values(datos);
                 //Yo revisaría cómo se usa la siguiente x en la línea 36 
                 x = Math.floor(random(0, (datosArreglados.length)-1));
-                select("#title").html("data[x].name");
+                select("#title").html("losDigimon");
                 select("#time").html(lasHoras + ":" + losMinutos);
-                select("#level").html("data[x].level");
+                select("#level").html("losDigimon");
                 var elAside = select("aside");
                 createImg(datosArreglados[x].img).parent(elAside).style("width", "100%");
-                createA("page.html?data=" + "data[x].name", "siguiente página").parent("next");
-                createA("page.html?data=" + "data[x].name", "Acepto, dibujaré a " + "data[x].name" + " 🖍").parent("accept");
+                createA("page.html?data=" + "losDigimon.name", "siguiente página").parent("next");
+                createA("page.html?data=" + "losDigimon.name", "Acepto, dibujaré a " + "losDigimon.name" + " 🖍").parent("accept");
                 noCanvas();
             }
         </script>
