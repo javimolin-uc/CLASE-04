@@ -18,7 +18,7 @@ function setup() {
     descarga.mousePressed(borrador);
     createCanvas(windowWidth, windowHeight).position(0, 0).style("z-index", -1);
     background("#efebe9");
-    elColor = createColorPicker("#000000").parent("controles");
+    elColor = createColorPicker("#002800").parent("controles");
     elSlider = createSlider(1, 5, 3).parent("controles");
 }
 
