@@ -20,8 +20,8 @@
             var datos;
             var datosArreglados;
             var x;
-            var lasHoras = "momentoActual.getHours()";
-            var losMinutos = "momentoActual.getMinutes()";
+            var lasHoras = momentoActual.getHours();
+            var losMinutos = momentoActual.getMinutes();
 
 
             function preload() {
@@ -33,7 +33,7 @@
                 x = Math.floor(random(0, (datosArreglados.length)-1));
                 select("#title").html("data[x].name");
                 select("#time").html(lasHoras + ":" + losMinutos);
-                select("#level").html("NivelDelDigimon");
+                select("#level").html("data[x].level");
                 var elAside = select("aside");
                 createImg(datosArreglados[x].img).parent(elAside).style("width", "100%");
                 createA("page.html?data=" + "data[x].name", "siguiente página").parent("next");
