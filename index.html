@@ -20,8 +20,9 @@
             var datos;
             var datosArreglados;
             var x;
-            var lasHoras = "HH";
-            var losMinutos = "MM";
+            var lasHoras = "momentoActual.getHours()";
+            var losMinutos = "momentoActual.getMinutes()";
+
 
             function preload() {
                 datos = loadJSON("https://digimon-api.vercel.app/api/digimon");
