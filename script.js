@@ -5,15 +5,12 @@ function preload() {
 }
 
 function setup() {
-    //transformo el objeto en un arreglo
     elArreglo = Object.values(losDigimon);
     laPosicion = Math.round(random(0,elArreglo.length));
     console.log(laPosicion);
     createElement("h1", "Dibuja a <a href='"+ elArreglo[laPosicion].img +"' target='_blank'>" + elArreglo[laPosicion].name + "</a>").parent("instruccion");
-    //selecciono el elemento con esta identidad
     var descarga = select("#descarga");
-    descarga.mousePressed(artemania);
-    //selecciono el elemento con esta identidad    
+    descarga.mousePressed(artemania);   
     var descarga = select("#borra");
     descarga.mousePressed(borrador);
     createCanvas(windowWidth, windowHeight).position(0, 0).style("z-index", -1);
